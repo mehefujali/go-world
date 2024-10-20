@@ -1,13 +1,14 @@
 import { useState } from "react";
 
-const Country = ({ country }) => {
+const Country = ({ country, handelVisitedCountrys }) => {
       const { name, flags, currencies, timezones } = country
       const currenciesName = Object.values(currencies || {})
-      console.log(currenciesName);
+
       const [isVisited, setVisited] = useState(false)
       const handelVisited = () => {
 
             setVisited(!isVisited)
+            handelVisitedCountrys(flags.png)
       }
       return (
             <div className=" flex flex-col gap-2 border border-gray-400 shadow-md shadow-black p-4 rounded-lg">

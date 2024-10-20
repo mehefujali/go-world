@@ -6,11 +6,15 @@ import Navbar from './components/Nav/Navbar'
 
 function App() {
 
+  const handelSearchCountry = (event) => {
+    console.log(event.target.value);
+
+  }
 
   return (
     <div className=' text-white'>
       <header>
-        <Navbar></Navbar>
+        <Navbar handelSearchCountry={handelSearchCountry}></Navbar>
         <Hero></Hero>
       </header>
       {/* main section  */}
