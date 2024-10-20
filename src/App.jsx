@@ -7,7 +7,7 @@ function App() {
 
 
   return (
-    <body className=''>
+    <body className=' text-white'>
       <header>
         <Navbar></Navbar>
         <Hero></Hero>
