@@ -1,0 +1,3 @@
+.hide-scrollbar-corner::-webkit-scrollbar-corner {
+      background: transparent;
+}

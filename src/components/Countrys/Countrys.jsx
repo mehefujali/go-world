@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Country from "./country";
 import { useEffect } from "react";
+import './cuntry.css'
 
 const Countrys = () => {
       const [sliceData, setSliceData] = useState(20)
@@ -30,7 +31,8 @@ const Countrys = () => {
 
       return (
             <div className=" container mx-auto my-7">
-                  <div className="my-7 min-h-12 flex gap-2 overflow-x-scroll border p-3 scroll-m-1 border-cyan-500 rounded-lg">
+                  <div className="my-7 min-h-20 flex gap-2 scrollbar-thin scrollbar-thumb-cyan-500
+                  scrollbar-track-gray-700   overflow-x-scroll border p-3 scroll-m-1 border-cyan-500 rounded-lg">
                         {visitedCountrys.map(flags =>
                               <img className=" w-24 h-10" src={flags} alt="" />
                         )}
