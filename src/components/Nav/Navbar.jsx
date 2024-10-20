@@ -2,9 +2,9 @@
 const Navbar = () => {
       return (
             <nav className=" container mx-auto">
-                  <div className="navbar bg-base-100">
+                  <div className="navbar ">
                         <div className="flex-1">
-                              <a className="btn btn-ghost text-xl">GO WORLD</a>
+                              <a className=" text-2xl font-bold cursor-pointer text-cyan-500">GO WORLD</a>
                         </div>
                         <div className="flex-none gap-2">
                               <div className="form-control">
